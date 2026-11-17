@@ -9,7 +9,7 @@ export const usersRoute = new Elysia({ prefix: "/api/users" }).post(
     if (!result.success) {
       set.status = 400;
       return {
-        eror: result.error,
+        error: result.error,
       };
     }
 
